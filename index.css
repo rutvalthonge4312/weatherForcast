@@ -1,0 +1,121 @@
+.container {
+  margin: 0rem 15rem;
+  border: 2px solid grey;
+  border-radius: 15px;
+  color: rgb(85, 85, 85);
+
+  background-color: white;
+}
+body {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: rgb(207, 207, 207);
+}
+.part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 1.2rem;
+}
+.largepart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+#descriptionWeathoe {
+  font-size: 1.3rem;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal .temp p {
+  font-size: 9rem;
+}
+.horizontal > * {
+  margin: 2rem;
+  padding: 1rem;
+}
+.furtherPredictions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.furtherPredictions > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  min-width: 10rem;
+}
+.wind p {
+  font-size: 1.8rem;
+}
+.windInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.windInfo img {
+  height: 50px;
+  width: 50px;
+}
+
+.humidity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.humidity img {
+  height: 50px;
+  width: 50px;
+}
+@media screen and (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .largepart {
+    display: flex;
+    flex-direction: column;
+  }
+  .largepart * {
+    margin: 0.1rem;
+    padding: 0;
+  }
+  .largepart p {
+    font-size: 1rem;
+  }
+  .horizontal .temp p {
+    font-size: 3rem;
+  }
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+  .furtherPredictions {
+    overflow-x: scroll;
+  }
+  .wind {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
