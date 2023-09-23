@@ -1,9 +1,9 @@
 .container {
   display: flex;
   flex-direction: row;
+
   border-radius: 15px;
   color: rgb(85, 85, 85);
-
   background-color: white;
   background-color: rgb(217, 217, 217);
 }
@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: white;
+  border-radius: 15px;
 }
 .navbar {
   display: flex;
@@ -138,6 +139,11 @@ input {
     flex-direction: column;
     margin: auto;
   }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+  }
   .largepart {
     display: flex;
     flex-direction: column;
@@ -169,5 +175,8 @@ input {
 @media screen and (max-width: 510px) {
   .time p {
     font-size: 3rem;
+  }
+  input {
+    max-width: 100px;
   }
 }
